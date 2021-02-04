@@ -336,6 +336,8 @@ That's it for the main guide!
 ## Extra sections
 
 There's a follow-up guide available at [this]('https://github.com/m3101/C4.5-Tree-Forest-Classifier-Implementation-Guide/tree/main/extra') link with a couple extra topics (pruning, forests and bagging).
+* For some reason, the hyperlink is not rendering correctly on some markdown interpreters. If that's the case, here's the address:
+   * https://github.com/m3101/C4.5-Tree-Forest-Classifier-Implementation-Guide/tree/main/extra
 
 ---
 
