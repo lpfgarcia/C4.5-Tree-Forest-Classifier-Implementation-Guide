@@ -1,0 +1,38 @@
+Part 1:
+	Entropy = 0.9944066525627802
+Part 2:
+	Entropy (Taste as label) = 1.0
+	Entropy (Chile) = 0.9182958340544896
+	Entropy (Green) = 0.8112781244591328
+	Entropy (Red) = 0.8112781244591328
+	Attribute Entropy (Country): 0.9387218755408671
+	Attribute Entropy (Colour): 0.8112781244591328
+Part 3:
+	Num. Attribute Entropy (x at 0): 0.3714625098503106
+	Num. Attribute Entropy (y at 0): 0.9943479179070047
+	Output of minimum_num_attribute_entropy for x: (0.3714625098503106, -0.1628124)
+	Output of minimum_num_attribute_entropy for y: (0.9861247081468041, -2.7781863999999996)
+Part 4:
+Best split: ('y', 1.1492455, 0.0496319370885947)
+Part 5:
+Generating tree...
+Split by "y" at 1.1492
+If lesser than or equal to 1.1492:
+	Split by "x" at -2.0787
+	If lesser than or equal to -2.0787:
+		Split by "y" at 0.8204
+		If lesser than or equal to 0.8204:
+			It's orange
+		Otherwise (y>0.8204):
+			It's blue
+	Otherwise (x>-2.0787):
+		It's blue
+Otherwise (y>1.1492):
+	Split by "x" at -2.0806
+	If lesser than or equal to -2.0806:
+		It's blue
+	Otherwise (x>-2.0806):
+		It's orange
+Done!
+Calculating average score for 20 tests using the iris dataset
+92.48%

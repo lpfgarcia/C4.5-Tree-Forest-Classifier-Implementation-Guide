@@ -14,9 +14,9 @@ All the sections from part 1 on will be divided in 3 subsections.
 * The second one suggests a python-esque function structure in case you're having difficulty understanding the first section. `pd` refers to the `Pandas` module and `np` refers to `Numpy`.
 * The last section is an example output using the second section's structure (and comments on that output).
 
-The intended use for this guide is for the user to follow along using their favourite programming language. At the end of the main sections, the user will have a working C4.5 decision tree generator (which by itself has a fair performance on the iris dataset, for example).
+The intended use for this guide is for the user to follow along using their favourite programming language. At the end of the main sections, the user will have a working C4.5 decision tree generator (with a fair performance on the iris dataset).
 
-If they decide to follow the extra sections, the end result will be a simple bagging-based forest classifier (with an even better performance and less prone to overfitting).
+If they decide to follow the extra sections, the end result will be a simple bagging-based forest classifier (capable of tackling more complex problems, as demonstrated by the accent identification included there).
 
 ## Part 0: Entropy and impurity (Maths!)
 
@@ -258,7 +258,7 @@ Well that looks appropriate. "Y" axis, at about 1. Let's see how that looks:
 
 ![split](Split4.2.png)
 
-If you're not excited by now, this topic is probably less interesting for you than it is to me, or you're probably learning this because it's mandatory. In that case, congratulations for making it so far! Otherwise, there's still more to come!
+If you're not excited by now, this topic is probably less interesting to you than it is to me, or you're probably learning this because it's mandatory. In that case, congratulations for making it so far! Otherwise, there's still more to come!
 
 ## Part 5: The tree!
 ### 5.0 - Description
@@ -308,34 +308,36 @@ It's a bit hard to read text representations of trees, so here's a picture for `
 ![trainqdiv](Split5.2.png)
 
 ```
-Split at y = 1.1492
-If lesser than or equal to 1.1492
-        Split at x = -2.0787
-        If lesser than or equal to -2.0787
-                Split at y = 0.8204
-                If lesser than or equal to 0.8204
-                         Label = orange
-                Otherwise:
-                         Label = blue
-        Otherwise:
-                 Label = blue
-Otherwise:
-        Split at x = -2.0806
-        If lesser than or equal to -2.0806
-                 Label = blue
-        Otherwise:
-                 Label = orange
+Split by "y" at 1.1492
+If lesser than or equal to 1.1492:
+        Split by "x" at -2.0787
+        If lesser than or equal to -2.0787:
+                Split by "y" at 0.8204
+                If lesser than or equal to 0.8204:
+                        It's orange
+                Otherwise (y>0.8204):
+                        It's blue
+        Otherwise (x>-2.0787):
+                It's blue
+Otherwise (y>1.1492):
+        Split by "x" at -2.0806
+        If lesser than or equal to -2.0806:
+                It's blue
+        Otherwise (x>-2.0806):
+                It's orange
 ```
 
-It works! Theres a tiny sign of overfitting in the lower left corner (can you see that horizontal division and a tiny "blue" area?), but that's fair. That division has a high information gain and there's no way for us to eliminate it either by changing the parameters or pruning.
+It works! Theres a tiny sign of overfitting in the lower left corner (can you see that horizontal division and a tiny "blue" area?), but that's fair. That division has a high information gain on our training set and there's no way for us to eliminate it either by changing the parameters using the information we have so far.
 
-If we apply the same algorithm for the `iris.csv` dataset, we can already extract decent results. With a training set of 41 items and testing with 109, this tree already yields a 93.58% accuracy for predicting the flower species.
+If we apply the same algorithm for the `iris.csv` dataset, we can already extract decent results. On average, it has a 92.48% accuracy.
+
+That's it for the main guide!
 
 ## Extra sections
 
-There's a follow-up guide available at `TODO` with a couple extra topics (pruning, forests and bagging).
+There's a follow-up guide available at [this]('https://github.com/m3101/C4.5-Tree-Forest-Classifier-Implementation-Guide/tree/main/extra') link with a couple extra topics (pruning, forests and bagging).
 
 ---
 
 Made with <3 by Amélia O. F. da S. in a very tiresome day-long marathon.
-I hope it's been helpful!
+Thanks for reading, and I hope it's been helpful!

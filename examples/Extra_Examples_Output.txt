@@ -1,0 +1,149 @@
+Part 1
+The original tree has 5 splits and score 0.9357798165137615.
+Split by "petal-width" at 0.4
+If lesser than or equal to 0.4:
+	Split by "petal-width" at 0.1
+	If lesser than or equal to 0.1:
+		It's Iris-setosa
+	Otherwise (petal-width>0.1):
+		It's Iris-setosa
+Otherwise (petal-width>0.4):
+	Split by "petal-length" at 5.0
+	If lesser than or equal to 5.0:
+		Split by "petal-width" at 1.7
+		If lesser than or equal to 1.7:
+			It's Iris-versicolor
+		Otherwise (petal-width>1.7):
+			Split by "petal-length" at 4.8
+			If lesser than or equal to 4.8:
+				It's Iris-versicolor
+			Otherwise (petal-length>4.8):
+				It's Iris-virginica
+	Otherwise (petal-length>5.0):
+		It's Iris-virginica
+Pruning it by score yields a tree with 3 splits and score 0.9541284403669725
+Split by "petal-width" at 0.4
+If lesser than or equal to 0.4:
+	It's Iris-setosa
+Otherwise (petal-width>0.4):
+	Split by "petal-length" at 5.0
+	If lesser than or equal to 5.0:
+		Split by "petal-width" at 1.7
+		If lesser than or equal to 1.7:
+			It's Iris-versicolor
+		Otherwise (petal-width>1.7):
+			It's Iris-virginica
+	Otherwise (petal-length>5.0):
+		It's Iris-virginica
+Pruning it by entropy yields a tree with 3 splits and score 0.9541284403669725
+Split by "petal-width" at 0.4
+If lesser than or equal to 0.4:
+	It's Iris-setosa
+Otherwise (petal-width>0.4):
+	Split by "petal-length" at 5.0
+	If lesser than or equal to 5.0:
+		Split by "petal-width" at 1.7
+		If lesser than or equal to 1.7:
+			It's Iris-versicolor
+		Otherwise (petal-width>1.7):
+			It's Iris-virginica
+	Otherwise (petal-length>5.0):
+		It's Iris-virginica
+Part 2
+Accent base:
+Using 103 items for training, 226 for testing
+Forest generation: creating 25 new trees
+Eliminating trees
+Forest generation: creating 24 new trees
+Eliminating trees
+Forest generation: creating 24 new trees
+Eliminating trees
+Forest generation: creating 24 new trees
+Eliminating trees
+Forest generation: creating 24 new trees
+Eliminating trees
+Forest generation: creating 24 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 23 new trees
+Eliminating trees
+Forest generation: creating 22 new trees
+Eliminating trees
+Forest generation: creating 22 new trees
+Eliminating trees
+Forest generation: creating 22 new trees
+Eliminating trees
+Forest generation: creating 22 new trees
+Eliminating trees
+Forest generation: creating 22 new trees
+Eliminating trees
+Forest generation: creating 21 new trees
+Eliminating trees
+[(0.6092307692307691, 0.8846153846153846, 0.5, 0.6796116504854369), (0.6184615384615385, 0.8846153846153846, 0.4230769230769231, 0.6796116504854369), (0.6107692307692306, 0.8846153846153846, 0.4230769230769231, 0.6796116504854369), (0.5923076923076923, 0.8846153846153846, 0.4230769230769231, 0.6796116504854369), (0.6061538461538462, 0.8846153846153846, 0.4230769230769231, 0.6796116504854369), (0.6323076923076922, 0.8846153846153846, 0.46153846153846156, 0.6213592233009708), (0.6353846153846153, 0.8846153846153846, 0.38461538461538464, 0.6213592233009708), (0.5784615384615385, 0.8846153846153846, 0.4230769230769231, 0.6213592233009708), (0.6323076923076922, 0.8846153846153846, 0.34615384615384615, 0.6213592233009708), (0.6061538461538462, 0.8846153846153846, 0.38461538461538464, 0.6213592233009708), (0.6138461538461538, 0.8846153846153846, 0.4230769230769231, 0.6213592233009708), (0.6092307692307692, 0.8846153846153846, 0.38461538461538464, 0.6213592233009708), (0.5907692307692307, 0.8846153846153846, 0.4230769230769231, 0.6213592233009708), (0.6307692307692307, 0.8846153846153846, 0.4230769230769231, 0.6213592233009708), (0.6246153846153846, 0.8846153846153846, 0.38461538461538464, 0.7281553398058253), (0.6123076923076922, 0.8846153846153846, 0.3076923076923077, 0.7281553398058253), (0.6184615384615384, 0.8846153846153846, 0.46153846153846156, 0.7281553398058253), (0.6492307692307692, 0.8846153846153846, 0.4230769230769231, 0.7281553398058253), (0.6246153846153846, 0.8846153846153846, 0.38461538461538464, 0.7281553398058253), (0.6123076923076922, 0.8846153846153846, 0.4230769230769231, 0.7669902912621359), (0.6246153846153846, 0.8846153846153846, 0.38461538461538464, 0.7669902912621359)]
+Forest score for 25 trees, accent dataset: 0.5486725663716814
+Iris base:
+Using 41 items for training, 109 for testing
+Forest generation: creating 10 new trees
+Eliminating trees
+Forest generation: creating 7 new trees
+Eliminating trees
+Forest generation: creating 7 new trees
+Eliminating trees
+Forest generation: creating 7 new trees
+Eliminating trees
+Forest generation: creating 4 new trees
+Eliminating trees
+Forest generation: creating 3 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+Forest generation: creating 2 new trees
+Eliminating trees
+[(0.8636363636363636, 1.0, 0.5454545454545454, 0.9512195121951219), (0.8727272727272727, 1.0, 0.7272727272727273, 0.9512195121951219), (0.8727272727272727, 1.0, 0.5454545454545454, 0.9512195121951219), (0.9454545454545455, 1.0, 0.8181818181818182, 1.0), (0.9727272727272727, 1.0, 0.9090909090909091, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0), (0.9818181818181818, 1.0, 0.9090909090909091, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0), (0.9818181818181818, 1.0, 0.9090909090909091, 1.0), (0.9727272727272727, 1.0, 0.8181818181818182, 1.0), (0.9727272727272727, 1.0, 0.8181818181818182, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0), (0.9727272727272727, 1.0, 0.8181818181818182, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0), (0.9727272727272727, 1.0, 0.8181818181818182, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0), (0.9727272727272727, 1.0, 0.8181818181818182, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0), (0.9636363636363636, 1.0, 0.8181818181818182, 1.0)]
+Forest score for 10 trees, iris dataset: 0.9357798165137615
+
+(Appended afterwards with a different seed)
+
+Calculating single-tree average score for the accent recognition database (training with 7.5% of the set, just like the ensemble trees):
+Single tree average score: 42.79%
